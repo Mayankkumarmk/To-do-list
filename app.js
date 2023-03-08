@@ -13,8 +13,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://mayank30092003:mayankUsingMongo@cluster0.murutwr.mongodb.net/todolistDB", {useNewUrlParser: true});
-
+mongoose.connect("mongodb+srv://mayank30092003:mayankUsingMongo@cluster0.kmy4vpe.mongodb.net/todolistDB").then(
+  app.listen(process.env.PORT || 3000, function() {
+    console.log("Server started on port 3000");
+  })
+);
 const itemsSchema = {
   name: String
 };
