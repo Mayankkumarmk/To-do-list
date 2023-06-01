@@ -1,17 +1,22 @@
 {
-  "name": "todolist-v1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "name": "kareem",
+  "version": "2.3.2",
+  "description": "Next-generation take on pre/post function hooks",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test/*",
+    "test-travis": "nyc mocha ./test/*"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "ejs": "^2.6.1",
-    "express": "^4.18.2",
-    "lodash": "^4.17.21",
-    "mongoose": "^5.13.16"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vkarpov15/kareem.git"
+  },
+  "devDependencies": {
+    "acquit": "1.x",
+    "acquit-ignore": "0.1.x",
+    "nyc": "11.x",
+    "mocha": "5.x"
+  },
+  "author": "Valeri Karpov <val@karpov.io>",
+  "license": "Apache-2.0"
+}
